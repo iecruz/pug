@@ -1,0 +1,13 @@
+extends ./layout
+
+block content
+    .uk-section
+        #taskContainer.uk-container
+        
+    #createTaskModal.uk-modal(tabIndex='-1')
+        .uk-modal-dialog.uk-modal-body.uk-margin-auto-vertical
+            button.uk-modal-close-default(type='button', uk-close)
+            h2.uk-modal-title='Create Task'
+
+append script
+    script(src='/js/index.bundle.js')
